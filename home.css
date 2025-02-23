@@ -1,0 +1,208 @@
+/* General Styles */
+body {
+    width: 100%;
+    height: 105vh;
+    text-align: center;
+    background: linear-gradient(to bottom, #1a877a 10%, #135f54 40%, #18191f 90%) no-repeat;
+    background-size: cover;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Prevent mobile zoom-in when clicking buttons */
+html, body {
+    touch-action: manipulation;
+}
+/* MAIN CONTAINER */
+.main-container {
+    display: flex;
+    justify-content: center; /* Center game container */
+    align-items: flex-start;
+    gap: 20px; /* Space between ads and game */
+    padding: 20px;
+}
+
+/* AD CONTAINER */
+.ad-container {
+    width: 250px; /* Adjust ad width */
+}
+
+/* GAME CONTAINER */
+.game-container {
+    flex-grow: 1; /* Takes remaining space */
+    max-width: 600px; /* Keep it centered */
+    text-align: center;
+    padding: 20px;
+     /* Slight background */
+    border-radius: 10px;
+}
+
+.main-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.left-ad {
+    width: 250px; /* Adjust width based on your ad size */
+    margin-right: 20px; /* Space between ad and game container */
+}
+
+.game-container {
+    flex-grow: 1; /* Takes remaining space */
+}
+
+/* Header Section */
+.header {
+    height: 50px;
+    background-color: #111;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+/* Navigation Links */
+.nav-links {
+    margin-right: 20px;
+}
+
+.nav-links{
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Header Buttons */
+.head-btn{
+    border: 1px solid gold;
+    background: transparent;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    color: gold;
+    text-decoration: none;
+    border-radius: 6px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+}
+/* Button Hover Effects */
+.head-btn:hover, .head-btn2:hover, .reset-btn:hover, .save-btn:hover {
+    background: gold;
+    color: black;
+}
+
+/* Main Container */
+.container {
+    margin-top: 50px;
+}
+
+/* Coin Count Display */
+.coin-count, .collected-count {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+/* Click Button */
+.click-btn {
+    background: transparent;
+    width: 250px;
+    height: 250px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out;
+}
+
+button img {
+    margin: 0;
+    padding: 0;
+    width: 250px;
+    height: 250px;
+}
+
+/* Click Effect */
+.click-btn:active {
+    transform: scale(0.9);
+}
+
+/* Reset Button */
+.reset-btn {
+    background: transparent;
+    padding: 8px 16px;
+    border: 1px solid #00ff00;
+    font-size: 14px;
+    font-weight: bold;
+    color: #00ff00;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.reset-btn:hover{
+    background: #00ff00;
+    color: black;
+}
+/* Save Button */
+.save-btn {
+    border: 1px solid gold;
+    background: transparent;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    color: gold;
+    text-decoration: none;
+    border-radius: 6px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+}
+
+/* Total Coins Section */
+.total-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+/* Mobile Optimization */
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .logo {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .nav-links {
+        margin-right: 0;
+    }
+
+    .click-btn {
+        width: 200px;
+        height: 200px;
+    }
+
+    button img {
+        width: 200px;
+        height: 200px;
+    }
+}

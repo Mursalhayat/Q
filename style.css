@@ -1,0 +1,210 @@
+  /* General Styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: max(1000px, 100vw);
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #1a877a 10%, #135f54 40%, #18191f 90%) no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+/* Header Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #111;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 300px;
+    height: 50px;
+    margin-right: 8px;
+}
+
+/* Navigation */
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: gold;
+    font-size: 14px;
+    font-weight: bold;
+}
+.nav-links a:hover{
+    color: gold;
+}
+/* "NEW" Label */
+.new-label {
+    font-size: 10px;
+    color: black;
+    background: gold;
+    padding: 2px 6px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+.new-label:hover{
+    color: gold;
+    background: #fff;
+    
+}
+/* Profile Button */
+.profile-btn button{
+    border: 1px solid gold;
+    background: transparent;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    color: gold;
+    text-decoration: none;
+    border-radius: 6px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+}
+.profile-btn button:hover {
+    background: gold;
+    color: black;
+}
+/* Hero Section */
+.hero {
+    justify-content: center;
+    align-items: center;
+    margin-top: 130px;
+    margin-left: 100px;
+    max-width: 500px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 16px;
+    color: #aaa;
+    margin-top: 10px;
+}
+
+/* Buttons */
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.start-trading {
+    background: transparent;
+    padding: 12px 24px;
+    border: 2px solid gold;
+    font-size: 16px;
+    font-weight: bold;
+    color: gold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.start-trading:hover {
+    background: gold;
+    color: black;
+}
+
+.start-invest {
+    background: transparent;
+    padding: 12px 24px;
+    border: 2px solid #00ff00;
+    font-size: 16px;
+    font-weight: bold;
+    color: #00ff00;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.start-invest:hover {
+    background: #00ff00;
+    color: black;
+}
+
+footer {
+    margin-top: 130px;
+    background: transparent;
+    padding: 5px;
+}
+
+.crypto-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    overflow-x: auto;
+    padding: 10px 0;
+}
+
+.crypto-card {
+    background: linear-gradient(135deg, #222, #333);
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    width: 150px;
+    box-shadow: 0px 4px 10px rgba(255, 215, 0, 0.2);
+}
+
+.crypto-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.crypto-name {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+
+.buy-btn {
+    background: linear-gradient(90deg, #ffd700, #ffaa00);
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: black;
+}
+
+.crypto-price {
+    font-size: 18px;
+    margin-top: 10px;
+    color: white;
+}
+
+.crypto-change {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.positive {
+    color: #ffd700;
+}
+
+.negative {
+    color: #ff4d4d;
+}
